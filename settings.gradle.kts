@@ -24,6 +24,5 @@ pluginManagement {
     }
 }
 
-
-rootProject.name = "storage"
 rootProject.name = "Room-Ktor-Homework"
+include(":application")

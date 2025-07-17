@@ -12,9 +12,11 @@ kspVersion = "2.1.21-2.0.1"
 room = "2.7.2"
 ktorVersion = "3.2.2"
 kotlinx-serialization = "1.6.3"
-runner = "1.0.2"
-espressoCoreVersion = "3.0.2"
-appcompatV7 = "28.0.0"
+
+kotlinGradlePlugin = "2.0.21"
+runnerVersion = "1.0.2"
+androidEspressoCore = "3.0.2"
+appcompatV7Version = "28.0.0"
 
 
 [libraries]
@@ -48,6 +50,8 @@ ktor-server-cio = { module = "io.ktor:ktor-server-cio", version.ref = "ktorVersi
 ktor-server-yaml = { module = "io.ktor:ktor-server-config-yaml", version.ref = "ktorVersion" }
 ktor-server-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktorVersion" }
 ktor-server-test = { module = "io.ktor:ktor-server-test-host", version.ref = "ktorVersion" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
