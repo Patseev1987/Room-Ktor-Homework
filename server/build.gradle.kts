@@ -22,6 +22,5 @@ dependencies{
     implementation(libs.ktor.server.cio)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.yaml)
-    implementation("io.ktor:ktor-serialization-gson:3.2.2")
     testImplementation(libs.ktor.server.test)
 }

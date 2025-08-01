@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Application</string>
+    <string name="employees">Employees</string>
+    <string name="favorite">Favorite</string>
+    <string name="tools">Tools:</string>
+    <string name="delete_employee">Delete employee</string>
+    <string name="employee_not_found">Employees not found</string>
 </resources>

@@ -1,12 +1,8 @@
-@file:OptIn(ExperimentalUuidApi::class)
-
 package data
 
 import domain.Employee
 import domain.Tool
 import domain.ToolType
-import kotlin.uuid.ExperimentalUuidApi
-import kotlin.uuid.Uuid
 
 val tool1 = Tool(
     code = "1111-1111",
@@ -50,7 +46,7 @@ val tool5 = Tool(
 
 
 val employee1 = Employee(
-    id = Uuid.random().toString(),
+    id = "1",
     name = "John",
     surname = "Smith",
     photoUrl = "https://business.providence.edu/wp-content/uploads/sites/138/2023/08/KT-9453.jpg",
@@ -58,7 +54,7 @@ val employee1 = Employee(
 )
 
 val employee2 = Employee(
-    id = Uuid.random().toString(),
+    id = "2",
     name = "Ivan",
     surname = "Ivanov",
     photoUrl = "https://cdn.er.ru/media/people/member_photos_site/photos_site_mentions_671/photo-1595846323.jpg",
@@ -66,7 +62,7 @@ val employee2 = Employee(
 )
 
 val employee3 = Employee(
-    id = Uuid.random().toString(),
+    id = "3",
     name = "Michael",
     surname = "Krauz",
     photoUrl = "https://pliki.ptwp.pl/pliki/01/54/79/015479_r1_300.jpg",

@@ -1,4 +1,4 @@
-package ru.bogdan.application.ui.theme
+package ru.bogdan.application.presentor.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

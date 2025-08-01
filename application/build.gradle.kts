@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.serialization)
+
 }
 
 android {
@@ -33,7 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        compose = true
 
+    }
 }
 
 dependencies {
@@ -46,6 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +71,12 @@ dependencies {
     implementation(libs.ktor.negotiation)
     implementation(libs.ktor.json)
     implementation(libs.ktor.logging)
+
+    //Coil
+    implementation(libs.coil)
+    implementation(libs.coil.network)
+
+    //Dagger2
+    implementation(libs.dagger)
+    ksp(libs.daggerCompiler)
 }

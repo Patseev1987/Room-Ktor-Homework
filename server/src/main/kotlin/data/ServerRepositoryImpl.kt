@@ -4,10 +4,7 @@ package data
 
 import domain.Employee
 import domain.ServerRepository
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
@@ -35,7 +32,7 @@ object ServerRepositoryImpl : ServerRepository {
                 data.add(employee)
             }
             return true
-        } catch (e: Throwable){
+        } catch (e: Throwable) {
             return false
         }
     }
@@ -48,17 +45,17 @@ object ServerRepositoryImpl : ServerRepository {
                 data.add(emp)
             }
             return emp
-        } catch (e: Throwable){
+        } catch (e: Throwable) {
             throw e
         }
     }
 
     override suspend fun deleteEmployee(employeeId: String): Boolean {
-        try{
+        try {
             val temp = data.find { it.id == employeeId }
             data.remove(temp)
             return true
-        } catch (e: Throwable){
+        } catch (e: Throwable) {
             return false
         }
     }

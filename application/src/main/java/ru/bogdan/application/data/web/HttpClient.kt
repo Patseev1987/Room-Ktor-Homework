@@ -7,6 +7,8 @@ import io.ktor.client.plugins.logging.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
+const val BASE_URL = "http://192.168.0.23:8080"
+
 object HttpClientApp {
     val client = HttpClient(CIO) {
         install(Logging) {
